@@ -8,12 +8,12 @@ import java.util.Properties;
 public class Configurator {
 	
 	
-	private final String MSG_BIENVENUE="\t **** BIENVENUE sur le GestionCoin ****\n"	+ " Type :   1  to connect   ****   2  to sign \n  ";
-	private final String TABLEAU_DE_BORD="\t *** Type *** \n"+" 1  Post" +"  2  Annonces "+" 3  Delete" +" 4  Quit \n " ;
-	private final String properties="ressources/.properties";
-	private final String ERROR_CONNECT="\t   CE COMPTE N'EXISTE PAS !!!!! \n";
+	private final String MSG_BIENVENUE="\t **** BIENVENUE sur le GestionCoin **** ,"	+ " Type :   1  to connect   ****   2  to sign ,  ";
+	private final String TABLEAU_DE_BORD="\t *** Type *** ,"+" 1 >> Post" +"  2 >>Annonces "+" 3 >>Delete" +" 4 >>Quit "+"5 >>Conect "+"6 >>Accept"+", " ;
+	private final String properties="ressources/config.properties";
+	private final String ERROR_CONNECT="\t   CE COMPTE N'EXISTE PAS !!!!! ,";
 	private final String ERROR_SIGN="\t  CE PSEUDO EXISTE DEJA!!!!" ;
-	private final String ERROR_COMMAND="\t LE NUMERO ENTREZ NE CORRESPAND PAS !!! \n";
+	private final String ERROR_COMMAND="\t LE NUMERO ENTREZ NE CORRESPAND PAS !!! ,";
 	private final String PSEUDO=">> Entrez pseudo : ";
 	
 	

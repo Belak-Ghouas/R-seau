@@ -30,19 +30,20 @@ public class Gestionnaire {
 		String result = "";
 		
 		for (int i = 0; i < annonces.size(); i++) {
-			result += "id>> " + i + "  " +annonces.get(i).Affiche()+"\n";
+			result += "id >>>> " + i +  "  "  +annonces.get(i).Affiche()+",";
 		}
 		return result;
 	}
 
-	public void afficheUser() {
+	public String afficheUser() {
+		String result="";
 		for (int i = 0; i < users.size(); i++) {
-			System.out.println("id: " + i + "  " + users.get(i).getPseudo());
+			result+="id: " + i + "  " + users.get(i).getPseudo()+",";
 		}
+		return result;
 	}
 
 	public void ajouterAnnonce(Annonce an) {
-		System.out.println("je suis l l "+an.getDescription()); 
 		this.annonces.add(an);
 	}
 
@@ -92,11 +93,12 @@ public class Gestionnaire {
 		String result="";
 		for (int i = 0; i < annonces.size(); i++) {
 			if (annonces.get(i).getPseudo().equals(pseudo))
-				result+=annonces.get(i).Affiche();
+				result+=i+">>"+" "+annonces.get(i).Affiche() +",";
 				
 		}
 		return result;
 	}
+	
 	public ArrayList<Annonce> MaListeAnnonce(String pseudo){
 		ArrayList<Annonce> result=new ArrayList<Annonce>();
 		for (int i = 0; i < annonces.size(); i++) {
